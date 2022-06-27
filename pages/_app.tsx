@@ -1,3 +1,6 @@
+import type { AppProps } from "next/app";
+import { createTheme, ThemeProvider } from "@mui/material";
+
 import "../styles/scss/nextjs-material-kit-pro.scss";
 import "animate.css/animate.min.css";
 
@@ -23,18 +26,15 @@ Router.events.on("routeChangeStart", (url) => {
   );
 });
 Router.events.on("routeChangeComplete", () => {
-  ReactDOM.unmountComponentAtNode(
-    document.getElementById("page-transition") as Element
-  );
+  ReactDOM.unmountComponentAtNode(document.getElementById("page-transition") as Element);
   document.body.classList.remove("body-page-transition");
 });
 Router.events.on("routeChangeError", () => {
-  ReactDOM.unmountComponentAtNode(
-    document.getElementById("page-transition") as Element
-  );
+  ReactDOM.unmountComponentAtNode(document.getElementById("page-transition") as Element);
   document.body.classList.remove("body-page-transition");
 });
 
+const theme = createTheme();
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }: any) {
     let pageProps = {};
@@ -45,6 +45,7 @@ export default class MyApp extends App {
 
     return { pageProps };
   }
+  
   render() {
     const { Component, pageProps } = this.props;
 
@@ -57,8 +58,9 @@ export default class MyApp extends App {
           />
           <title>Material Theme | Builder.io</title>
         </Head>
-
-        <Component {...pageProps} />
+        <ThemeProvider theme={theme}>
+          <Component {...pageProps} />
+        </ThemeProvider>
       </React.Fragment>
     );
   }

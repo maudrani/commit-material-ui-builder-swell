@@ -18,9 +18,11 @@ const styles = {
 const useStyles = makeStyles(styles);
 
 export default function GridItem(props: {
-
-  children: any;
-  className: any;
+  children?: any;
+  className?: any;
+  md?: number;
+  sm?: number;
+  lg?: number;
 }) {
   const { children, className, ...rest } = props;
   const classes = useStyles();

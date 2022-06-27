@@ -16,11 +16,11 @@ import styles from "../../styles/ts/components/footerStyle";
 const useStyles = makeStyles(styles);
 
 export default function Footer(props: {
-  children: any;
+  children?: any;
   content: any;
   theme: any;
   big: any;
-  className: any;
+  className?: any;
 }) {
   const { children, content, theme, big, className } = props;
   const classes = useStyles();

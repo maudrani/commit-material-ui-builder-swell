@@ -189,7 +189,7 @@ const headerStyle = (theme: any) => ({
     width: "100%",
   },
   collapse: {
-    [theme.breakpoints.up("md")]: {
+    "@media (max-width: 1000px)": {
       display: "flex !important" as any,
       MsFlexPreferredSize: "auto",
       flexBasis: "auto",

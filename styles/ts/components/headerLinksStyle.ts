@@ -9,7 +9,7 @@ import tooltip from "../others/tooltipsStyle";
 
 const headerLinksStyle = (theme: any) => ({
   list: {
-    [theme.breakpoints.up("md")]: {
+    "@media (max-width: 1000px)": {
       WebkitBoxAlign: "center" as "center",
       MsFlexAlign: "center",
       alignItems: "center",
@@ -18,7 +18,7 @@ const headerLinksStyle = (theme: any) => ({
       MsFlexDirection: "row",
       flexDirection: "row",
     },
-    [theme.breakpoints.down("sm")]: {
+    "@media (max-width: 700px)": {
       display: "block",
     },
     marginTop: "0px",
@@ -36,7 +36,7 @@ const headerLinksStyle = (theme: any) => ({
     width: "auto",
     margin: "0",
     padding: "0",
-    [theme.breakpoints.down("sm")]: {
+    "@media (max-width: 700px)": {
       "& ul": {
         maxHeight: "300px",
         overflow: "scroll",
@@ -79,7 +79,7 @@ const headerLinksStyle = (theme: any) => ({
       marginBottom: "0px",
       fontSize: "1.25rem",
     },
-    [theme.breakpoints.down("sm")]: {
+    "@media (max-width: 700px)": {
       width: "calc(100% - 30px)",
       marginLeft: "15px",
       marginBottom: "8px",
@@ -112,7 +112,7 @@ const headerLinksStyle = (theme: any) => ({
     textDecoration: "none",
     margin: "0px",
     display: "inline-flex",
-    [theme.breakpoints.down("sm")]: {
+    "@media (max-width: 700px)": {
       width: "calc(100% - 30px)",
       marginLeft: "15px",
       marginBottom: "5px",
@@ -195,7 +195,7 @@ const headerLinksStyle = (theme: any) => ({
     marginRight: "5px",
   },
   collapse: {
-    [theme.breakpoints.up("md")]: {
+    "@media (max-width: 1000px)": {
       display: "flex !important" as any,
       MsFlexPreferredSize: "auto",
       flexBasis: "auto",

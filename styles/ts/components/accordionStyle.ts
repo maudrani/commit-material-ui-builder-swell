@@ -69,11 +69,11 @@ const accordionStyle = (theme: any) => ({
   },
   accordionSummaryExpaned: {
     "& $accordionSummaryExpandIcon": {
-      [theme.breakpoints.up("md")]: {
+      "@media (max-width: 1000px)": {
         top: "auto !important" as any,
       },
       transform: "rotate(180deg)",
-      [theme.breakpoints.down("sm")]: {
+      "@media (max-width: 700px)": {
         top: "10px !important" as any,
       },
       // some jss/css to make the cards look a bit better on Internet Explorer
@@ -108,14 +108,14 @@ const accordionStyle = (theme: any) => ({
     margin: "0 !important" as any,
   },
   accordionSummaryExpandIcon: {
-    [theme.breakpoints.up("md")]: {
+    "@media (max-width: 1000px)": {
       top: "auto !important" as any,
     },
     transform: "rotate(0deg)",
     color: "inherit",
     right: "10px",
     position: "absolute" as "absolute",
-    [theme.breakpoints.down("sm")]: {
+    "@media (max-width: 700px)": {
       top: "10px !important" as any,
     },
     // some jss/css to make the cards look a bit better on Internet Explorer

@@ -13,7 +13,6 @@ import styles from "../../styles/ts/components/cardStyle";
 const useStyles = makeStyles(styles);
 
 export default function Card(props: {
-  [x: string]: any;
   className: any;
   children: any;
   plain: any;

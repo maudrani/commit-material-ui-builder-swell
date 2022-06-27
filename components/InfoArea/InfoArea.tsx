@@ -34,25 +34,10 @@ export default function InfoArea(props: {
     [className]: className !== undefined,
   });
 
-  const IconComp = () => {
-    /* if (typeof props.icon === "string") {
-      return <Icon className={iconClasses}>{props.icon}</Icon>;
-    }
-
-    if (!props.icon) return <></>; */
-
-    return <Favorite className={iconClasses} />;
-  };
-
   return (
     <div className={infoAreaClasses}>
-      {/* {props.icon && (
-        <div className={iconWrapper}>
-          <IconComp />
-        </div>
-      )} */}
       <div className={iconWrapper}>
-        <IconComp />
+        <Favorite className={iconClasses} />
       </div>
       <div className={classes.descriptionWrapper}>
         <h4 className={classes.title}>{title}</h4>
@@ -67,7 +52,7 @@ InfoArea.defaultProps = {
 };
 
 InfoArea.propTypes = {
-  icon: PropTypes.oneOfType([PropTypes.object, PropTypes.string])/* .isRequired */,
+  icon: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.node.isRequired,
   iconColor: PropTypes.oneOf([

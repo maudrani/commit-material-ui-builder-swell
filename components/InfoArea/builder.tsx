@@ -16,7 +16,7 @@ const Component = ({ title, description, icon }: any) => (
   />
 );
 
-Builder.registerComponent(InfoArea, {
+Builder.registerComponent(Component, {
   name: "Info area",
   inputs: [
     {

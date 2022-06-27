@@ -13,9 +13,9 @@ import styles from "../../styles/ts/components/cardHeaderStyle";
 const useStyles = makeStyles(styles);
 
 export default function CardHeader(props: {
-  [x: string]: any;
+
   className: any;
-  children: any;
+  children?: any;
   color: any;
   plain: any;
   image: any;

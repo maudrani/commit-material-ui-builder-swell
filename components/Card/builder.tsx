@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Builder } from "@builder.io/react";
 import Card from "./Card";
 import CardHeader from "./CardHeader";

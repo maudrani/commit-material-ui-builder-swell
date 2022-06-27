@@ -73,7 +73,7 @@ export default function ProductPage() {
         }}
       />
       <Parallax
-        image="/images/bg/bg6.jpg"
+        image="/img/bg6.jpg"
         filter="rose"
         className={classes.pageHeader}
       >
@@ -311,7 +311,7 @@ export default function ProductPage() {
               </GridItem>
             </GridContainer>
           </div>
-
+          
           <div className={classes.relatedProducts}>
             <h3 className={classNames(classes.title, classes.textCenter)}>
               You may also be interested in:
@@ -322,7 +322,7 @@ export default function ProductPage() {
                   <CardHeader image>
                     <a href="#pablo">
                       <img
-                        src="/images/product/card-product1.jpg"
+                        src="/img/examples/card-product1.jpg"
                         alt="cardProduct"
                       />
                     </a>
@@ -366,7 +366,7 @@ export default function ProductPage() {
                   <CardHeader image>
                     <a href="#pablo">
                       <img
-                        src="/images/product/card-product3.jpg"
+                        src="/img/examples/card-product3.jpg"
                         alt="cardProduct3"
                       />
                     </a>
@@ -404,7 +404,7 @@ export default function ProductPage() {
                   <CardHeader image>
                     <a href="#pablo">
                       <img
-                        src="/images/product/card-product4.jpg"
+                        src="/img/examples/card-product4.jpg"
                         alt="cardProduct4"
                       />
                     </a>
@@ -442,7 +442,7 @@ export default function ProductPage() {
                   <CardHeader image>
                     <a href="#pablo">
                       <img
-                        src="/images/product/card-product2.jpg"
+                        src="/img/examples/card-product2.jpg"
                         alt="cardProduct2"
                       />
                     </a>

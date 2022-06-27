@@ -13,7 +13,7 @@ import styles from "../../styles/ts/components/cardBodyStyle";
 const useStyles = makeStyles(styles);
 
 export default function CardBody(props: {
-  [x: string]: any;
+
   className: any;
   children: any;
   background: any;

@@ -9,13 +9,9 @@ import { makeStyles } from "@mui/styles";
 import { Button } from "@mui/material";
 import styles from "../../styles/ts/components/buttonStyle";
 
-interface ButtonProps {
-  children: React.ReactNode;
-}
-
 const useStyles = makeStyles(styles);
 
-const RegularButton = React.forwardRef<ButtonProps>(
+const RegularButton = React.forwardRef(
   (
     {
       color,

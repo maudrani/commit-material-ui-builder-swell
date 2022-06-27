@@ -13,7 +13,7 @@ import styles from "../../styles/ts/components/cardAvatarStyle";
 const useStyles = makeStyles(styles);
 
 export default function CardAvatar(props: {
-  [x: string]: any;
+
   children: any;
   className: any;
   plain: any;

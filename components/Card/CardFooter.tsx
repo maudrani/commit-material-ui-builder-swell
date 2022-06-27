@@ -13,7 +13,7 @@ import styles from "../../styles/ts/components/cardFooterStyle";
 const useStyles = makeStyles(styles);
 
 export default function CardFooter(props: {
-  [x: string]: any;
+
   className: any;
   children: any;
   plain: any;

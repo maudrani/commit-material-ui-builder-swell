@@ -36,7 +36,7 @@ export default function CustomDropdown(props: {
   innerDropDown?: any;
   navDropdown?: any;
 }) {
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = React.useState({} as any);
 
   const handleClick = (event: {
     target: any;

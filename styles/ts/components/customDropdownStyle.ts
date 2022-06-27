@@ -21,13 +21,13 @@ import {
 
 const customDropdownStyle = (theme: any) => ({
   popperClose: {
-    pointerEvents: "none",
+    pointerEvents: "none" as "none",
     display: "none !important",
   },
   popperNav: {
     [theme.breakpoints.down("sm")]: {
       "&, &$popperResponsive": {
-        position: "static !important",
+        position: "static !important" as "static",
         left: "unset !important",
         top: "unset !important",
         transform: "none !important",
@@ -79,7 +79,7 @@ const customDropdownStyle = (theme: any) => ({
     padding: "5px 0",
     margin: "2px 0 0",
     fontSize: "14px",
-    textAlign: "left",
+    textAlign: "left" as "left",
     listStyle: "none",
     backgroundColor: whiteColor,
     backgroundClip: "padding-box",
@@ -89,7 +89,7 @@ const customDropdownStyle = (theme: any) => ({
   },
   popperResponsive: {
     zIndex: "1200",
-    position: "absolute !important",
+    position: "absolute !important" as "absolute",
     [theme.breakpoints.down("sm")]: {
       zIndex: "1640",
       float: "none",
@@ -107,14 +107,14 @@ const customDropdownStyle = (theme: any) => ({
     padding: "10px 20px",
     margin: "0 5px",
     borderRadius: "2px",
-    position: "relative",
+    position: "relative" as "relative",
     transition: "all 150ms linear",
     display: "block",
-    clear: "both",
+    clear: "both" as "both",
     fontWeight: "400",
     height: "100%",
     color: grayColor[8],
-    whiteSpace: "nowrap",
+    whiteSpace: "nowrap" as "nowrap",
     minHeight: "unset",
   },
   darkHover: {
@@ -172,7 +172,7 @@ const customDropdownStyle = (theme: any) => ({
     },
   },
   dropdownItemRTL: {
-    textAlign: "right",
+    textAlign: "right" as "right",
   },
   dropdownDividerItem: {
     margin: "5px 0",
@@ -210,7 +210,7 @@ const customDropdownStyle = (theme: any) => ({
     fontSize: "0.75rem",
     lineHeight: "1.428571",
     color: grayColor[10],
-    whiteSpace: "nowrap",
+    whiteSpace: "nowrap" as "nowrap",
     fontWeight: "inherit",
     marginTop: "10px",
     minHeight: "24px",

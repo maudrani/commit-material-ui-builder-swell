@@ -114,7 +114,7 @@ const accordionStyle = (theme: any) => ({
     transform: "rotate(0deg)",
     color: "inherit",
     right: "10px",
-    position: "absolute",
+    position: "absolute" as "absolute",
     [theme.breakpoints.down("sm")]: {
       top: "10px !important",
     },

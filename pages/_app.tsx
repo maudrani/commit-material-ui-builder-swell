@@ -17,6 +17,8 @@ import Router from "next/router";
 
 import PageChange from "../components/PageChange/PageChange";
 
+const theme = {};
+
 Router.events.on("routeChangeStart", (url) => {
   console.log(`Loading: ${url}`);
   document.body.classList.add("body-page-transition");
@@ -34,7 +36,6 @@ Router.events.on("routeChangeError", () => {
   document.body.classList.remove("body-page-transition");
 });
 
-const theme = createTheme();
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }: any) {
     let pageProps = {};

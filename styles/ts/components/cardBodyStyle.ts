@@ -28,8 +28,8 @@ const cardBodyStyle: StyleRules = {
     },
   },
   cardPricing: {
-    padding: "15px!important",
-    margin: "0px!important",
+    padding: "15px!important" as any,
+    margin: "0px!important" as any,
   },
   cardSignup: {
     padding: "0px 30px 0px 30px",

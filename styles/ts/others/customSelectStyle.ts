@@ -29,21 +29,21 @@ const customSelectStyle: StyleRules = {
     },
   },
   selectFormControl: {
-    margin: "10px 1px 10px 0px !important",
+    margin: "10px 1px 10px 0px !important" as any,
     "& > div": {
       "&:before": {
-        borderBottomWidth: "1px !important",
-        borderBottomColor: grayColor[11] + " !important",
+        borderBottomWidth: "1px !important" as any,
+        borderBottomColor: grayColor[11] + " !important" as any,
       },
       "&:after": {
-        borderBottomColor: primaryColor[0] + "!important",
+        borderBottomColor: primaryColor[0] + "!important" as any,
       },
     },
   },
   selectLabel: {
     fontSize: "12px",
     textTransform: "uppercase",
-    color: grayColor[1] + " !important",
+    color: grayColor[1] + " !important" as any,
     top: "8px",
   },
   selectMenu: {
@@ -86,12 +86,12 @@ const customSelectStyle: StyleRules = {
     },
   },
   selectMenuItemSelected: {
-    backgroundColor: primaryColor[0] + "!important",
+    backgroundColor: primaryColor[0] + "!important" as any,
     color: whiteColor,
   },
   selectMenuItemSelectedMultiple: {
     "&:hover": {
-      backgroundColor: primaryColor[0] + "!important",
+      backgroundColor: primaryColor[0] + "!important" as any,
       color: whiteColor,
       ...primaryBoxShadow,
       "&:after": {

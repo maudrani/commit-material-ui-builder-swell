@@ -22,24 +22,24 @@ import {
 const customDropdownStyle = (theme: any) => ({
   popperClose: {
     pointerEvents: "none" as "none",
-    display: "none !important",
+    display: "none !important" as any,
   },
   popperNav: {
     [theme.breakpoints.down("sm")]: {
       "&, &$popperResponsive": {
-        position: "static !important" as "static",
-        left: "unset !important",
-        top: "unset !important",
-        transform: "none !important",
-        willChange: "none !important",
+        position: "static !important" as any as "static",
+        left: "unset !important" as any,
+        top: "unset !important" as any,
+        transform: "none !important" as any,
+        willChange: "none !important" as any,
         "& > div": {
-          boxShadow: "none !important",
+          boxShadow: "none !important" as any,
           marginLeft: "1.5rem",
           marginRight: "1.5rem",
-          transition: "none !important",
-          marginTop: "0px !important",
-          marginBottom: "5px !important",
-          padding: "0px !important",
+          transition: "none !important" as any,
+          marginTop: "0px !important" as any,
+          marginBottom: "5px !important" as any,
+          padding: "0px !important" as any,
         },
       },
     },
@@ -52,9 +52,9 @@ const customDropdownStyle = (theme: any) => ({
   innerManager: {
     display: "block",
     "& > div > button,& > div > a": {
-      margin: "0px !important",
-      color: "inherit !important",
-      padding: "10px 20px !important",
+      margin: "0px !important" as any,
+      color: "inherit !important" as any,
+      padding: "10px 20px !important" as any,
       "& > span:first-child": {
         width: "100%",
         justifyContent: "flex-start",
@@ -89,7 +89,7 @@ const customDropdownStyle = (theme: any) => ({
   },
   popperResponsive: {
     zIndex: "1200",
-    position: "absolute !important" as "absolute",
+    position: "absolute !important" as any as "absolute",
     [theme.breakpoints.down("sm")]: {
       zIndex: "1640",
       float: "none",

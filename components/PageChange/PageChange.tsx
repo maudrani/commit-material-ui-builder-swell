@@ -14,8 +14,8 @@ import {
 const useStyles = makeStyles({
   progress: {
     color: infoColor[0],
-    width: "6rem !important",
-    height: "6rem !important",
+    width: "6rem !important" as any as any,
+    height: "6rem !important" as any as any,
   },
   wrapperDiv: {
     margin: "100px auto",

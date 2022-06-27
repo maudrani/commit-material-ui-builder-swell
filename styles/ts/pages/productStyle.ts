@@ -172,7 +172,7 @@ const productStyle: StyleRules = {
     color: roseColor[0],
   },
   justifyContentBetween: {
-    justifyContent: "space-between!important",
+    justifyContent: "space-between!important" as any,
   },
   socialFeed: {
     "& p": {

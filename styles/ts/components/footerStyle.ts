@@ -13,7 +13,7 @@ import {
 
 const footerStyle: StyleRules = {
   left: {
-    float: "left!important",
+    float: "left!important" as any,
     display: "block",
   },
   right: {
@@ -22,7 +22,7 @@ const footerStyle: StyleRules = {
     float: "right",
   },
   rightLinks: {
-    float: "right!important",
+    float: "right!important" as any,
     "& ul": {
       marginBottom: 0,
       marginTop: 10,

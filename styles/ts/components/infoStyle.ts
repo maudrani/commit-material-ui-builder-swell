@@ -53,7 +53,7 @@ const infoStyle: StyleRules = {
   },
   title: {
     ...title,
-    margin: "1.75rem 0 0.875rem !important",
+    margin: "1.75rem 0 0.875rem !important" as any,
     minHeight: "unset",
   },
   description: {

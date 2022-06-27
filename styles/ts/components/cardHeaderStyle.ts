@@ -24,7 +24,7 @@ const cardHeaderStyle: StyleRules = {
     marginLeft: "0px",
     marginRight: "0px",
     "&$cardHeaderImage": {
-      margin: "0 !important",
+      margin: "0 !important" as any,
     },
   },
   cardHeaderImage: {
@@ -52,7 +52,7 @@ const cardHeaderStyle: StyleRules = {
   },
   noShadow: {
     "& img": {
-      boxShadow: "none !important",
+      boxShadow: "none !important" as any,
     },
   },
   cardHeaderContact: {

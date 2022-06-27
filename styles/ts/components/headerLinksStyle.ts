@@ -55,7 +55,7 @@ const headerLinksStyle = (theme: any) => ({
     },
   },
   listItemText: {
-    padding: "0 !important",
+    padding: "0 !important" as any,
   },
   navLink: {
     color: "inherit",
@@ -196,7 +196,7 @@ const headerLinksStyle = (theme: any) => ({
   },
   collapse: {
     [theme.breakpoints.up("md")]: {
-      display: "flex !important",
+      display: "flex !important" as any,
       MsFlexPreferredSize: "auto",
       flexBasis: "auto",
     },

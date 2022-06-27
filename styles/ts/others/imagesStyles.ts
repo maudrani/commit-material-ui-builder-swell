@@ -7,10 +7,10 @@ const imagesStyles: StyleRules = {
     height: "auto",
   },
   imgRounded: {
-    borderRadius: "6px !important",
+    borderRadius: "6px !important" as any,
   },
   imgRoundedCircle: {
-    borderRadius: "50% !important",
+    borderRadius: "50% !important" as any,
   },
   imgRaised: {
     boxShadow:

@@ -689,7 +689,7 @@ const buttonStyle: StyleRules = {
     borderRadius: "30px",
   },
   block: {
-    width: "100% !important",
+    width: "100% !important" as any,
   },
   link: {
     "&,&:hover,&:focus": {

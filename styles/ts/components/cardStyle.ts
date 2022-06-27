@@ -37,7 +37,7 @@ const cardStyle: StyleRules = {
     fontSize: ".875rem",
     // some jss/css to make the cards look a bit better on Internet Explorer
     "@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)": {
-      display: "inline-block !important",
+      display: "inline-block !important" as any,
     },
   },
   cardPlain: {
@@ -67,10 +67,10 @@ const cardStyle: StyleRules = {
     textAlign: "center",
     color: whiteColor,
     "& h3": {
-      color: whiteColor + " !important",
+      color: whiteColor + " !important" as any,
     },
     "& p": {
-      color: "rgba(" + hexToRgb(whiteColor) + ",0.7)!important",
+      color: "rgba(" + hexToRgb(whiteColor) + ",0.7)!important" as any,
     },
     "&:after": {
       position: "absolute",
@@ -85,13 +85,13 @@ const cardStyle: StyleRules = {
       borderRadius: "6px",
     },
     "& small": {
-      color: "rgba(" + hexToRgb(whiteColor) + ", 0.7) !important",
+      color: "rgba(" + hexToRgb(whiteColor) + ", 0.7) !important" as any,
     },
   },
   cardPricing: {
     textAlign: "center",
     "&:after": {
-      backgroundColor: "rgba(" + hexToRgb(blackColor) + ", 0.7) !important",
+      backgroundColor: "rgba(" + hexToRgb(blackColor) + ", 0.7) !important" as any,
     },
     "& ul": {
       listStyle: "none",

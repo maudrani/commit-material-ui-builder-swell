@@ -17,14 +17,14 @@ const accordionStyle = (theme: any) => ({
   accordion: {
     boxShadow: "none",
     "&:before": {
-      display: "none !important",
+      display: "none !important" as any,
     },
   },
   accordionExpanded: {
-    margin: "0 !important",
+    margin: "0 !important" as any,
   },
   accordionSummary: {
-    minHeight: "auto !important",
+    minHeight: "auto !important" as any,
     backgroundColor: "transparent",
     borderBottom: "1px solid " + grayColor[6],
     padding: "25px 10px 5px 0px",
@@ -70,16 +70,16 @@ const accordionStyle = (theme: any) => ({
   accordionSummaryExpaned: {
     "& $accordionSummaryExpandIcon": {
       [theme.breakpoints.up("md")]: {
-        top: "auto !important",
+        top: "auto !important" as any,
       },
       transform: "rotate(180deg)",
       [theme.breakpoints.down("sm")]: {
-        top: "10px !important",
+        top: "10px !important" as any,
       },
       // some jss/css to make the cards look a bit better on Internet Explorer
       "@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)": {
-        display: "inline-block !important",
-        top: "10px !important",
+        display: "inline-block !important" as any,
+        top: "10px !important" as any,
       },
     },
   },
@@ -105,22 +105,22 @@ const accordionStyle = (theme: any) => ({
     color: roseColor[0],
   },
   accordionSummaryContent: {
-    margin: "0 !important",
+    margin: "0 !important" as any,
   },
   accordionSummaryExpandIcon: {
     [theme.breakpoints.up("md")]: {
-      top: "auto !important",
+      top: "auto !important" as any,
     },
     transform: "rotate(0deg)",
     color: "inherit",
     right: "10px",
     position: "absolute" as "absolute",
     [theme.breakpoints.down("sm")]: {
-      top: "10px !important",
+      top: "10px !important" as any,
     },
     // some jss/css to make the cards look a bit better on Internet Explorer
     "@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)": {
-      display: "inline-block !important",
+      display: "inline-block !important" as any,
     },
   },
   accordionSummaryExpandIconExpanded: {},

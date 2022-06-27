@@ -135,14 +135,14 @@ const headerStyle = (theme: any) => ({
       ", 0.46)",
   },
   transparent: {
-    backgroundColor: "transparent !important",
+    backgroundColor: "transparent !important" as any,
     boxShadow: "none",
     paddingTop: "25px",
     color: whiteColor,
   },
   dark: {
     color: whiteColor,
-    backgroundColor: grayColor[9] + " !important",
+    backgroundColor: grayColor[9] + " !important" as any,
     boxShadow:
       "0 4px 20px 0px rgba(" +
       hexToRgb(blackColor) +
@@ -155,7 +155,7 @@ const headerStyle = (theme: any) => ({
     padding: "0.625rem 0",
     marginBottom: "20px",
     color: grayColor[15],
-    backgroundColor: whiteColor + " !important",
+    backgroundColor: whiteColor + " !important" as any,
     boxShadow:
       "0 4px 18px 0px rgba(" +
       hexToRgb(blackColor) +
@@ -190,7 +190,7 @@ const headerStyle = (theme: any) => ({
   },
   collapse: {
     [theme.breakpoints.up("md")]: {
-      display: "flex !important",
+      display: "flex !important" as any,
       MsFlexPreferredSize: "auto",
       flexBasis: "auto",
     },
